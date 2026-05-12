@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Shalom Katongo</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Verdana, sans-serif;
+    }
+
+    body{
+      background:#0d1117;
+      color:white;
+    }
+
+    header{
+      background:#161b22;
+      padding:20px;
+    }
+
+    nav{
+      width:90%;
+      margin:auto;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+    }
+
+    .logo{
+      color:#58a6ff;
+      font-size:28px;
+    }
+
+    nav ul{
+      display:flex;
+      list-style:none;
+    }
+
+    nav ul li{
+      margin-left:25px;
+    }
+
+    nav ul li a{
+      color:white;
+      text-decoration:none;
+    }
+
+    .about-section{
+      width:90%;
+      margin:50px auto;
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:40px;
+      align-items:center;
+    }
+
+    .about-image img{
+      width:100%;
+      border-radius:15px;
+      border:4px solid #58a6ff;
+    }
+
+    .about-text{
+      background:#161b22;
+      padding:40px;
+      border-radius:15px;
+    }
+
+    h2{
+      color:#58a6ff;
+      margin-bottom:20px;
+      font-size:38px;
+    }
+
+    p{
+      line-height:1.8;
+      margin-bottom:15px;
+    }
+
+    button{
+      margin-top:15px;
+      padding:12px 24px;
+      border:none;
+      background:#58a6ff;
+      color:white;
+      border-radius:30px;
+      cursor:pointer;
+    }
+
+    #skills{
+      margin-top:20px;
+      display:none;
+    }
+
+    #skills li{
+      margin:10px 0;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <h1 class="logo">Shalom Katongo</h1>
+
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="about-section">
+
+  <div class="about-image">
+    <img
+      src="https://wallpapers.com/images/hd/cyber-security-background-meuqfzxcg4gdd26s.jpg"
+      alt="Technology"
+    >
+  </div>
+
+  <div class="about-text">
+
+    <h2>About Me</h2>
+
+    <p>
+      I am Shalom Katongo, a technology enthusiast passionate
+      about programming and cybersecurity.
+    </p>
+
+    <p>
+      I enjoy building websites, exploring new technologies,
+      and improving my coding skills every day.
+    </p>
+
+    <p>
+      My ambition is to become a professional software engineer
+      and contribute to innovative digital solutions.
+    </p>
+
+    <button id="skillBtn">
+      View Skills
+    </button>
+
+    <ul id="skills">
+      <li>HTML & CSS</li>
+      <li>JavaScript</li>
+      <li>Cybersecurity</li>
+      <li>Responsive Design</li>
+    </ul>
+
+  </div>
+
+</section>
+
+<script>
+  const skillBtn = document.getElementById("skillBtn");
+
+  skillBtn.addEventListener("click", function(){
+
+    const skills = document.getElementById("skills");
+
+    if(skills.style.display === "block"){
+      skills.style.display = "none";
+    } else {
+      skills.style.display = "block";
+    }
+
+  });
+</script>
+
+</body>
+</html>
